@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="675dp"
+        android:layout_height="551dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <Button
+            android:id="@+id/init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="初始化" />
+
+
+        <Button
+            android:id="@+id/open_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开门" />
+
+        <Button
+            android:id="@+id/record_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="录制视频" />
+
+        <Button
+            android:id="@+id/release_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="释放所有资源" />
+
+        <Button
+            android:id="@+id/test_algorithm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="算法测试" />
+
+        <Button
+            android:id="@+id/close_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关门" />
+
+        <Button
+            android:id="@+id/change_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变重量" />
+
+        <Button
+            android:id="@+id/change_weight_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="重量改变的值" />
+
+        <TextView
+            android:id="@+id/fps_textview"
+            android:layout_width="107dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/camera_view"
+            android:gravity="center_horizontal"
+            android:textColor="@color/RED"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="72dp"
+            tools:text="15.3/30.0" />
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

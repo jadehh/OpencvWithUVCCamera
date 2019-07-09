@@ -1,0 +1,2 @@
+include ':app', ':jade', ':motiondet', ':libusbcamera', ':all-fmmr'
+include ':opencv41Libs'

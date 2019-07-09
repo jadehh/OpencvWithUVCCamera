@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+group='com.github.jiangdongguo'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 27
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        sourceSets {
+            main {
+                jni.srcDirs = []
+                jniLibs.srcDirs = ['libs']
+            }
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation("com.serenegiant:common:${commonLibVersion}") {
+        exclude module: 'support-v4'
+    }
+    implementation project(':jade')
+    implementation 'org.netbeans.external:com-google-gson:RELEASE110'
+    implementation project(':opencv41Libs')
+    implementation project(':motiondet')
+}
