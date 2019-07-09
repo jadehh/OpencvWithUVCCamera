@@ -1,0 +1,2 @@
+# OpencvWithUVCCamera
+使用USB摄像头做Opencv图像处理
