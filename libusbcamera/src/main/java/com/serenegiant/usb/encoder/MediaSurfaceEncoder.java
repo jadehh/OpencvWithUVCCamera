@@ -160,7 +160,9 @@ public class MediaSurfaceEncoder extends MediaEncoder implements IVideoEncoder {
         	colorFormat = caps.colorFormats[i];
             if (isRecognizedVideoFormat(colorFormat)) {
             	if (result == 0)
-            		result = colorFormat;
+            		{
+            		    result = colorFormat;
+            		}
                 break;
             }
         }

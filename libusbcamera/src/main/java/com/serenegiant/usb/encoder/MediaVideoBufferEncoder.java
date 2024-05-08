@@ -150,7 +150,9 @@ public class MediaVideoBufferEncoder extends MediaEncoder implements IVideoEncod
         	colorFormat = caps.colorFormats[i];
             if (isRecognizedViewoFormat(colorFormat)) {
             	if (result == 0)
-            		result = colorFormat;
+            		{
+            		    result = colorFormat;
+            		}
                 break;
             }
         }
