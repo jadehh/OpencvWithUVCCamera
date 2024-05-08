@@ -398,7 +398,9 @@ public abstract class MediaEncoder implements Runnable {
     @SuppressWarnings("deprecation")
 	protected void drain() {
     	if (mMediaCodec == null)
-			return;
+			{
+			    return;
+			}
         ByteBuffer[] encoderOutputBuffers = mMediaCodec.getOutputBuffers();
         int encoderStatus, count = 0;
         final MediaMuxerWrapper muxer = mWeakMuxer.get();
